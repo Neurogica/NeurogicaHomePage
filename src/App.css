@@ -1,0 +1,57 @@
+/* Add this CSS to your App.css file */
+
+.app-container {
+  position: relative;
+  min-height: 100vh;
+  width: 100vw;
+  overflow-x: hidden;
+  background-color: #2C2C2C; /* Set the background to grey */
+}
+
+.react-player {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.home-container::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* background-color: rgba(44, 44, 44, 0.7);  */
+  z-index: 0; /* Make sure the overlay is behind the content but above the video */
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  text-align: center;
+  padding: 2rem;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem;
+  z-index: 1; /* Ensure cards are above the overlay */
+}
+
+/* Ensure the header is on top of the video */
+.MuiAppBar-root {
+  z-index: 2 !important;
+}
