@@ -34,9 +34,9 @@ const Header: React.FC = () => {
         </Box>
         <Box sx={{ flexGrow: 1 }} />
         <Box className={classes.navButtons} sx={{ display: { xs: 'none', md: 'flex' } }}>
-          <Button component={Link} smooth to="#about" className={classes.button}>会社概要</Button>
-          <Button component={Link} smooth to="#services" className={classes.button}>サービス一覧</Button>
-          <Button component={Link} smooth to="#vision" className={classes.button}>ビジョン</Button>
+          <Button component={Link} smooth to="/#about" className={classes.button}>会社概要</Button>
+          <Button component={Link} smooth to="/#services" className={classes.button}>サービス一覧</Button>
+          <Button component={Link} smooth to="/#vision" className={classes.button}>ビジョン</Button>
           <Button component={Link} smooth to="/people" className={classes.button}>People</Button>
           <Button component={Link} smooth to="/contact" className={classes.button}>お問い合わせ</Button>
         </Box>

@@ -1,0 +1,24 @@
+@keyframes move {
+    0% {
+      border-radius: 27% 69% 40% 46%;
+    }
+    16.666% {
+      border-radius: 35% 65% 45% 50%;
+    }
+    33.333% {
+      border-radius: 45% 55% 50% 50%;
+    }
+    50% {
+      border-radius: 55% 50% 55% 50%;
+    }
+    66.666% {
+      border-radius: 65% 45% 60% 40%;
+    }
+    83.333% {
+      border-radius: 32% 69% 40% 46%;
+    }
+    100% {
+      border-radius: 27% 55% 35% 40%;
+    }
+  }
+  

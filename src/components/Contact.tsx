@@ -1,19 +1,36 @@
 import React from 'react';
+import { Container, Box, Typography } from '@mui/material';
+import useStyles from './ContactStyles';
+import Stars from './Stars'; // Starsコンポーネントをインポート
 
 const Contact: React.FC = () => {
+  const classes = useStyles();
+
   return (
-    <div>
-      <h2>お問い合わせ</h2>
-      <p>お問い合わせ先の詳細情報をここに記述します。</p>
-      <iframe 
-        title="お問い合わせフォーム" 
-        src="https://docs.google.com/forms/d/e/1FAIpQLScsH2GZijKbk1XyLo4w_neMQ3JVu6osROS-ThN-V-nJvKX-jA/viewform?embedded=true" 
-        width="640" 
-        height="800" 
-        frameBorder="0"
-        style={{ marginTop: '0', marginBottom: '0', marginLeft: '0', marginRight: '0' }}
-        >読み込み中…</iframe>
+    <div className={classes.contactContainer}>
+      <div className={classes.starsBackground}>
+        <Stars />
+      </div>
+      <Container className={classes.formContainer}>
+        {/* <Box className={classes.section}> */}
+          {/* <Typography variant="h4" component="h2" className={classes.title}>
+            お問い合わせ
+          </Typography>
+          <Typography variant="body1" className={classes.description}>
+            お問い合わせ先の詳細情報をここに記述します。
+          </Typography> */}
+          <iframe 
+            title="お問い合わせフォーム" 
+            src="https://forms.gle/ErvwbLgxXwsJfU5bA" 
+            width="100%" 
+            height="800" 
+            frameBorder="0"
+            className={classes.iframe}
+          >読み込み中…</iframe>
+        {/* </Box> */}
+      </Container>
     </div>
   );
 }
+
 export default Contact;

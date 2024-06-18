@@ -1,7 +1,7 @@
 .app-bar {
     color: #4d4dbd;
     background-color: #111139;
-    padding: 0 2rem;
+    /* padding: 0 2rem; */
     box-shadow: none;
   }
   
@@ -12,7 +12,7 @@
   }
   
   .logo {
-    margin-right: 10px;
+    /* margin-right: 10px; */
     height: 50px;
   }
   
