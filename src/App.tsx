@@ -1,25 +1,22 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import ReactPlayer from 'react-player';
-import './App.css';
-import Header from './components/Header';
 import Home from './components/Home';
-import AboutUs from './components/AboutUs';
 import People from './components/People';
+import Contact from './components/Contact';
+import Header from './components/Header';
+import './App.css';
 
 const App: React.FC = () => {
   return (
     <Router>
-      <div className="app-container">
-        <Header />
-        <Routes>
-          <Route path="/about-us" element={<AboutUs />} />
-          <Route path="/people" element={<People />} />
-          <Route path="/" element={<Home />} />
-        </Routes>
-      </div>
+      <Header />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/people" element={<People />} />
+        <Route path="/contact" element={<Contact />} />
+      </Routes>
     </Router>
   );
-}
+};
 
 export default App;
