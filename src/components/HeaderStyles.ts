@@ -2,7 +2,7 @@ import { makeStyles } from '@mui/styles';
 
 const useStyles = makeStyles({
   header: {
-    backgroundColor: '#1E2225 !important', // カスタムカラー
+    backgroundColor: '#1E2225 !important',
   },
   logo: {
     marginRight: 10,
@@ -21,8 +21,8 @@ const useStyles = makeStyles({
     color: '#fff !important',
   },
   button: {
-    color: '#fff !important', // 強制的に白色に設定
-    textDecoration: 'none', // リンクのテキストデコレーションを無効にする
+    color: '#fff !important',
+    textDecoration: 'none', 
   },
 });
 

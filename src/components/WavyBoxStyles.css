@@ -1,0 +1,39 @@
+/* WavyBoxStyles.css */
+@keyframes wave {
+    0% {
+      transform: translateX(0) translateY(0) rotate(0deg);
+    }
+    25% {
+      transform: translateX(5px) translateY(-5px) rotate(1deg);
+    }
+    50% {
+      transform: translateX(0) translateY(5px) rotate(0deg);
+    }
+    75% {
+      transform: translateX(-5px) translateY(-5px) rotate(-1deg);
+    }
+    100% {
+      transform: translateX(0) translateY(0) rotate(0deg);
+    }
+  }
+  
+  .wavy-box {
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    background: linear-gradient(90deg, #C3F1FF, #0072ff);
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    animation: wave 5s infinite;
+  }
+  
+  .wavy-box h4 {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .wavy-box p {
+    margin: 10px 0 0;
+  }
+  

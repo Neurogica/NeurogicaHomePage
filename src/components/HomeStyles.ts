@@ -52,7 +52,8 @@ const useStyles = makeStyles({
   mainContent: {
     padding: '4rem 0',
     color: 'white',
-    backgroundColor: '#1E2225',
+    // backgroundColor: '#1E2225',
+    backgroundColor: 'rgba(30, 34, 37, 0.7)',
   },
   section: {
     marginBottom: '4rem',
@@ -74,7 +75,7 @@ const useStyles = makeStyles({
     maxWidth: '1000px',
     fontSize: '1.2rem',
     lineHeight: '1.6',
-    color: '#b0b0b0',
+    color: '#dedede',
   },
   visionContainer: {
     display: 'flex',
@@ -93,7 +94,23 @@ const useStyles = makeStyles({
     maxWidth: '800px',
     fontSize: '1.2rem',
     lineHeight: '1.6',
-    color: '#b0b0b0',
+    color: '#dedede'
+  },
+  particlesBackground: {
+    position: 'absolute',
+    top: 0,
+    left: 0,
+    width: '100%',
+    height: '100%',
+    zIndex: -1,
+  },
+  starsBackground: {
+    position: 'absolute',
+    top: 0,
+    left: 0,
+    width: '100%',
+    height: '100%',
+    zIndex: -3,
   },
 });
 

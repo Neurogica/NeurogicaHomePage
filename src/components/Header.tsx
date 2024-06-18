@@ -17,16 +17,20 @@ const Header: React.FC = () => {
             marginRight: '20px',
           }}
         >
-          <img
-            src={`${process.env.PUBLIC_URL}/images/neurogica_logo.png`}
-            alt="Neurogica logo"
-            className={classes.logo}
-          />
-          <img
-            src={`${process.env.PUBLIC_URL}/images/neurogica_logo_white.png`}
-            alt="Neurogica Name"
-            className={classes.logoWhite}
-          />
+          <Link to="/">
+            <img
+              src={`${process.env.PUBLIC_URL}/images/neurogica_logo.png`}
+              alt="Neurogica logo"
+              className={classes.logo}
+            />
+          </Link>
+          <Link to="/">
+            <img
+              src={`${process.env.PUBLIC_URL}/images/neurogica_logo_white.png`}
+              alt="Neurogica Name"
+              className={classes.logoWhite}
+            />
+          </Link>
         </Box>
         <Box sx={{ flexGrow: 1 }} />
         <Box className={classes.navButtons} sx={{ display: { xs: 'none', md: 'flex' } }}>

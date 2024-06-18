@@ -1,11 +1,11 @@
 import React, { useEffect, useState, useRef } from 'react';
 import ReactPlayer from 'react-player';
-import { Box, Typography, Container } from '@mui/material';
-import Particles from 'react-tsparticles';
-import { loadFull } from 'tsparticles';
-import { disableBodyScroll, clearAllBodyScrollLocks } from 'body-scroll-lock';
+import { Container, Typography, Box } from '@mui/material';
 import useStyles from './HomeStyles';
 import Tab from './Tab';
+import Stars from './Stars';  // Starsコンポーネントをインポート
+import GlassCard from './GlassCard';  // GlassCardコンポーネントをインポート
+import { clearAllBodyScrollLocks, disableBodyScroll } from 'body-scroll-lock';
 
 const Home: React.FC = () => {
   const [showLoadingVideo, setShowLoadingVideo] = useState(true);
@@ -15,22 +15,11 @@ const Home: React.FC = () => {
   const targetRef = useRef<HTMLDivElement>(null);
   const classes = useStyles();
 
-  const particlesInit = async (main: any) => {
-    await loadFull(main);
-  };
-
   const handleLoadingVideoEnd = () => {
     setShowLoadingVideo(false);
-    setTimeout(() => {
-      setShowMainContent(true);
-      setTimeout(() => {
-        setCanScroll(true);
-        clearAllBodyScrollLocks();
-        if (businessSectionRef.current) {
-          businessSectionRef.current.scrollIntoView({ behavior: 'smooth' });
-        }
-      }, 0);
-    }, 0);
+    setShowMainContent(true);
+    setCanScroll(true);
+    clearAllBodyScrollLocks();
   };
 
   useEffect(() => {
@@ -56,37 +45,6 @@ const Home: React.FC = () => {
             onEnded={handleLoadingVideoEnd}
             className={classes.reactPlayer}
           />
-          <Particles
-            id="tsparticles"
-            init={particlesInit}
-            options={{
-              fpsLimit: 60,
-              particles: {
-                number: { value: 100 },
-                size: { value: 3 },
-                move: {
-                  enable: true,
-                  speed: 2,
-                },
-                opacity: {
-                  value: 0.5,
-                },
-              },
-              interactivity: {
-                events: {
-                  onHover: {
-                    enable: true,
-                    mode: 'repulse',
-                  },
-                },
-                modes: {
-                  repulse: {
-                    distance: 100,
-                  },
-                },
-              },
-            }}
-          />
         </div>
       )}
       {showMainContent && (
@@ -109,7 +67,7 @@ const Home: React.FC = () => {
           <div className={classes.mainContent} ref={businessSectionRef}>
             <Container>
               <Box id="about" className={classes.section}>
-                <div className={classes.aboutContainer}>
+                <GlassCard width="85%" height="auto">
                   <Typography variant="h4" component="h2" className={classes.aboutTitle}>
                     会社概要
                   </Typography>
@@ -118,11 +76,11 @@ const Home: React.FC = () => {
                     <br />
                     例) ストレスチェック 精神科心療内科の診断 人材採用 人事異動など
                     <br />
-                    ニューロジカは、これらの現状に対し、脳科学、神経科学的な先進手法で論理的かつ科学的に解決策を導くために発足しました。 
+                    ニューロジカはこれらの現状に対し、脳科学とAIを組み合わせた先進手法で論理的かつ科学的に解決策を導くために発足しました。 
                     <br />
                     社名のニューロジカは、ニューロでロジカルに課題解決をしていこうという理念に基づいた造語です。
                   </Typography>
-                </div>
+                </GlassCard>
               </Box>
               <Box id="services" className={classes.section}>
                 <Typography variant="h4" component="h2" gutterBottom>
@@ -131,7 +89,7 @@ const Home: React.FC = () => {
                 <Tab />
               </Box>
               <Box id="vision" className={classes.section}>
-                <div className={classes.visionContainer}>
+                <GlassCard width="85%" height="auto">
                   <Typography variant="h4" component="h2" className={classes.visionTitle}>
                     ビジョン
                   </Typography>
@@ -142,9 +100,12 @@ const Home: React.FC = () => {
                     <br />
                     Neuroビッグデータを用いたAI解析による価値提供を続け、新しい社会の構築を目指します。
                   </Typography>
-                </div>
+                </GlassCard>
               </Box>
             </Container>
+            <div className={classes.starsBackground}>
+              <Stars />
+            </div>
           </div>
         </>
       )}
