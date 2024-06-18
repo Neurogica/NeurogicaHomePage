@@ -1,16 +1,5 @@
-body {
-    /* width: 100vw;
-    height: 100vh;
-    background: #ff0055;
-    overflow: hidden;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center; */
-  }
   
-  .window {
+  .tab-window {
     width: 100%;
     height: 650px; /* 固定の高さを設定 */
     border-radius: 10px;

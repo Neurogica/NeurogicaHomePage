@@ -27,7 +27,7 @@ export default function Tab() {
   };
 
   return (
-    <div className="window">
+    <div className="tab-window">
       <nav>
         <Reorder.Group
           as="ul"

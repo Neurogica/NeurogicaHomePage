@@ -3,9 +3,9 @@ import { makeStyles } from '@mui/styles';
 const useStyles = makeStyles({
   homeContainer: {
     position: 'relative',
-    minHeight: '100vh',
-    width: '100vw',
-    overflowX: 'hidden',
+    minHeight: '100%',
+    width: '100%',
+    // overflowX: 'hidden',
     backgroundColor: '#1E2225',
     zIndex: 1,
   },
