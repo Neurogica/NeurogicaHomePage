@@ -5,7 +5,6 @@ const useStyles = makeStyles({
     position: 'relative',
     minHeight: '100%',
     width: '100%',
-    // overflowX: 'hidden',
     backgroundColor: '#1E2225',
     zIndex: 1,
   },
@@ -34,8 +33,8 @@ const useStyles = makeStyles({
   },
   content: {
     position: 'absolute',
-    top: '50%',
-    left: '50%',
+    top: '45%',
+    left: '52%',
     transform: 'translate(-50%, -50%)',
     color: '#e0e0e0',
     zIndex: 1,
@@ -45,14 +44,13 @@ const useStyles = makeStyles({
     textShadow: '2px 2px 4px rgba(0, 0, 0, 0.5)',
   },
   contentH1: {
-    fontSize: '3rem',
-    marginBottom: '0.5rem',
+    fontSize: '2rem',
     fontWeight: 'bold',
+    margin: '-6%',
   },
   mainContent: {
     padding: '4rem 0',
     color: 'white',
-    // backgroundColor: '#1E2225',
     backgroundColor: 'rgba(30, 34, 37, 0.7)',
   },
   section: {
@@ -65,7 +63,7 @@ const useStyles = makeStyles({
     textAlign: 'center',
   },
   aboutTitle: {
-    marginBottom: '1rem',
+    marginBottom: '4rem',
     fontSize: '2.5rem',
     fontWeight: 'bold',
     color: '#e0e0e0',
@@ -73,9 +71,11 @@ const useStyles = makeStyles({
   },
   aboutText: {
     maxWidth: '1000px',
-    fontSize: '1.2rem',
-    lineHeight: '1.6',
+    fontSize: '1.5rem',
+    lineHeight: '2',
     color: '#dedede',
+    textShadow: '2px 2px 4px rgba(0, 0, 0, 0.3)',
+    letterSpacing: '0.5px',
   },
   visionContainer: {
     display: 'flex',
@@ -92,9 +92,11 @@ const useStyles = makeStyles({
   },
   visionText: {
     maxWidth: '800px',
-    fontSize: '1.2rem',
-    lineHeight: '1.6',
-    color: '#dedede'
+    fontSize: '1.5rem',
+    lineHeight: '2',
+    color: '#dedede',
+    textShadow: '1px 1px 2px rgba(0, 0, 0, 0.3)',
+    letterSpacing: '0.5px',
   },
   particlesBackground: {
     position: 'absolute',
@@ -111,6 +113,22 @@ const useStyles = makeStyles({
     width: '100%',
     height: '100%',
     zIndex: -3,
+  },
+  logoContainer: {
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+    // marginBottom: '1rem',
+  },
+  logoTransparent: {
+    width: '20%', // Adjust the size as needed
+    height: 'auto',
+    // marginRight: '20px', // Adjust the spacing as needed
+  },
+  logoWhite: {
+    width: '80%', // Adjust the size as needed
+    height: 'auto',
+    marginRight: '20%', // Adjust the spacing as needed
   },
 });
 

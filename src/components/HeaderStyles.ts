@@ -6,7 +6,8 @@ const useStyles = makeStyles({
   },
   logo: {
     marginRight: 10,
-    height: '50px',
+    marginTop: 10,
+    height: '70px',
   },
   logoWhite: {
     marginRight: 10,

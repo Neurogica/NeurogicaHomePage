@@ -61,6 +61,18 @@ const Home: React.FC = () => {
             />
             <div className={classes.videoOverlay}></div>
             <div className={classes.content}>
+              <Box className={classes.logoContainer}>
+                <img
+                  src={`${process.env.PUBLIC_URL}/images/neurogica_logo_transparent.png`}
+                  alt="Neurogica logo transparent"
+                  className={classes.logoTransparent}
+                />
+                <img
+                  src={`${process.env.PUBLIC_URL}/images/neurogica_logo_white.png`}
+                  alt="Neurogica logo white"
+                  className={classes.logoWhite}
+                />
+              </Box>
               <h1 className={classes.contentH1}>ニューロで、ロジカルに。</h1>
             </div>
           </div>

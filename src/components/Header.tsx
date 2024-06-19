@@ -24,13 +24,13 @@ const Header: React.FC = () => {
               className={classes.logo}
             />
           </Link>
-          <Link to="/">
+          {/* <Link to="/">
             <img
               src={`${process.env.PUBLIC_URL}/images/neurogica_logo_white.png`}
               alt="Neurogica Name"
               className={classes.logoWhite}
             />
-          </Link>
+          </Link> */}
         </Box>
         <Box sx={{ flexGrow: 1 }} />
         <Box className={classes.navButtons} sx={{ display: { xs: 'none', md: 'flex' } }}>
