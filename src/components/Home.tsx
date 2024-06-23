@@ -86,9 +86,12 @@ const Home: React.FC = () => {
                   <Typography variant="body1" className={classes.aboutText}>
                     世の中では現状、再現性が必要とされている場面で、非科学的で主観的である指標をもとに判断が下される場面が数多く存在します。
                     <br />
+                    <br />
                     例) ストレスチェック 精神科心療内科の診断 人材採用 人事異動など
                     <br />
+                    <br />
                     ニューロジカはこれらの現状に対し、脳科学とAIを組み合わせた先進手法で論理的かつ科学的に解決策を導くために発足しました。 
+                    <br />
                     <br />
                     社名のニューロジカは、ニューロでロジカルに課題解決をしていこうという理念に基づいた造語です。
                   </Typography>
@@ -108,7 +111,9 @@ const Home: React.FC = () => {
                   <Typography variant="body1" className={classes.visionText}>
                     ビジョン：「脳科学が当たり前になる社会を創る。」
                     <br />
+                    <br />
                     現在非科学的な実社会の中で、広く脳科学が用いられ、 
+                    <br />
                     <br />
                     Neuroビッグデータを用いたAI解析による価値提供を続け、新しい社会の構築を目指します。
                   </Typography>

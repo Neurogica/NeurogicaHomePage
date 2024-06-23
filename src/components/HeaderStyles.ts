@@ -23,7 +23,32 @@ const useStyles = makeStyles({
   },
   button: {
     color: '#fff !important',
-    textDecoration: 'none', 
+    textDecoration: 'none',
+  },
+  drawerContainer: {
+    position: 'relative',
+    width: 250,
+    height: '100%',
+    backgroundColor: '#2B2B2B', // 黒めのグレーに変更
+    color: '#fff',
+    overflow: 'hidden',
+  },
+  drawerList: {
+    position: 'relative',
+    zIndex: 2,
+  },
+  '@media (max-width: 960px)': {
+    logo: {
+      height: '50px',
+    },
+  },
+  '@media (max-width: 600px)': {
+    navButtons: {
+      display: 'none',
+    },
+    logo: {
+      height: '40px',
+    }
   },
 });
 

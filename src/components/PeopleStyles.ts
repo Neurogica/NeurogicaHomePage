@@ -105,6 +105,33 @@ const useStyles = makeStyles({
       borderRadius: '27% 55% 35% 40%',
     },
   },
+  // 新しいレスポンシブスタイルを追加
+  '@media (max-width: 960px)': {
+    peopleSection: {
+      padding: '3%',
+    },
+    memberContainer: {
+      marginBottom: '15px',
+    },
+    peopleCard: {
+      padding: '10px',
+      width: '97%',
+    },
+  },
+  '@media (max-width: 600px)': {
+    peopleSection: {
+      padding: '2%',
+    },
+    memberContainer: {
+      marginBottom: '10px',
+    },
+    peopleCard: {
+      padding: '5px',
+    },
+    liquidUI: {
+      height: '200px', // 高さを200pxに調整
+    },
+  },
 });
 
 export default useStyles;

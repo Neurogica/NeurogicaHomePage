@@ -40,7 +40,6 @@
     "typescript": "^4.9.5",
     "web-vitals": "^2.1.4"
   },
-  "homepage": "https://neurogica.com",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",

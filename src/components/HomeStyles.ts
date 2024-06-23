@@ -1,4 +1,5 @@
 import { makeStyles } from '@mui/styles';
+import { maxWidth } from '@mui/system';
 
 const useStyles = makeStyles({
   homeContainer: {
@@ -129,6 +130,47 @@ const useStyles = makeStyles({
     width: '80%', // Adjust the size as needed
     height: 'auto',
     marginRight: '20%', // Adjust the spacing as needed
+  },
+  '@media (max-width: 1100px)': {
+    contentH1: {
+      paddingLeft: '3rem',
+      fontSize: '1.1rem',
+    },
+    logoTransparent: {
+      width: '100px',
+    },
+    logoWhite: {
+      width: '250px',
+    },
+    aboutText: {
+      fontSize: '0.1rem',
+      variant: 'h10',
+    },
+  },
+  '@media (max-width: 600px)': {
+    logoContainer: {
+      marginTop: '2rem',
+    },
+    contentH1: {
+      paddingLeft: '1.5rem',
+      fontSize: '0.8rem',
+    },
+    logoTransparent: {
+      width: '60px',
+    },
+    logoWhite: {
+      width: '190px',
+    },
+    aboutText: {
+      fontSize: '0.5rem',
+      variant: 'h5',
+    },
+    aboutTitle: {
+      fontSize: '1rem',
+    },
+    visionTitle: {
+      fontSize: '2rem',
+    },
   },
 });
 

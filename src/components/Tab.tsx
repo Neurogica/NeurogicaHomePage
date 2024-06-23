@@ -70,9 +70,9 @@ export default function Tab() {
             {selectedTab ? (
               <>
                 <img src={selectedTab.image} alt={selectedTab.label} className="tab-image" />
-                <Typography variant="h5" component="h2" className="tab-description">
+                <p className="tab-description">
                   {selectedTab.description}
-                </Typography>
+                </p>
               </>
             ) : "😋"}
           </motion.div>
@@ -159,13 +159,13 @@ export const InnerTab = ({ item, onClick, onRemove, isSelected }: Props) => {
       initial={{ opacity: 0, y: 30 }}
       animate={{
         opacity: 1,
-        backgroundColor: isSelected ? "#f3f3f3" : "#fff",
+        backgroundColor: isSelected ? "white" : "#bcbcbc",
         y: 0,
         transition: { duration: 0.15 },
       }}
       exit={{ opacity: 0, y: 20, transition: { duration: 0.3 } }}
       whileDrag={{ backgroundColor: "#e3e3e3" }}
-      className={isSelected ? "selected" : ""}
+      className={isSelected ? "selected" : "inner-tab"}
       onPointerDown={onClick}
     >
       <motion.span layout="position" className="label">{`${item.icon} ${item.label}`}</motion.span>
